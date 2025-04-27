@@ -50,15 +50,6 @@ Enjoy the game! 🎮🚀
 
 ---
 
-## 📸 Screenshots
-
-Here are some in-game screenshots for a sneak peek of what the game looks like:
-
-![Gameplay Screenshot](images/screenshot1.png)
-*Spaceship and alien fleet.*
-
----
-
 ## 📊 Build Status
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/your-username/sideways-shooter)
