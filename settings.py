@@ -1,3 +1,5 @@
+import pygame
+
 class Settings:
     """A class to store all settings for Sideways Shooter."""
 
@@ -6,7 +8,7 @@ class Settings:
         # Screen settings
         self.screen_width = 1200
         self.screen_height = 800
-        self.bg_color = (230, 230, 230)
+        self.bg_image = pygame.image.load("images/cosmic.jpg")
 
         # Ship settings
         self.ship_speed = 3.0
@@ -16,11 +18,11 @@ class Settings:
         self.bullet_speed = 6.0
         self.bullet_width = 15
         self.bullet_height = 3
-        self.bullet_color = (60, 60, 60)
-        self.bullets_allowed = 3
+        self.bullet_color = (255, 255, 255)
+        self.bullets_allowed = 5
 
-        # Alien settings.
-        #  alien_frequency controls how often a new alien appear.s
-        #    Higher values -> more frequent aliens. Max = 1.0.
+        # Alien settings
+        # alien_frequency controls how often a new alien appears.
+        # Higher values -> more frequent aliens. Max = 1.0.
         self.alien_frequency = 0.015
         self.alien_speed = 6.0

@@ -143,7 +143,8 @@ class SidewaysShooter:
 
     def _update_screen(self):
         """Update images on the screen, and flip to the new screen."""
-        self.screen.fill(self.settings.bg_color)
+        self.screen.fill((0, 0, 0))  # По избор, запълваме екрана с черно (по подразбиране)
+        self.screen.blit(self.settings.bg_image, (0, 0))  # Рисуваме фоновото изображение на позиция (0, 0)
         self.ship.blitme()
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
